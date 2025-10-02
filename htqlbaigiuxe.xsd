@@ -34,11 +34,18 @@
                 <xs:element name="khachhang" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="makh" ></xs:element>
-                            <xs:element name="hoten"></xs:element>
-                            <xs:element name="gioitinh"></xs:element>
-                            <xs:element name="sdt"></xs:element>
-                            <xs:element name="diachi"></xs:element>
+                            <xs:element name="makh">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="KH\d{8}"></xs:pattern>
+                                        <xs:maxLength value="10"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hoten" type="HoTenType"></xs:element>
+                            <xs:element name="gioitinh" type="GioiTinhType"></xs:element>
+                            <xs:element name="sdt" type="SoDienThoaiType"></xs:element>
+                            <xs:element name="diachi" type="xs:string"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -46,12 +53,26 @@
                 <xs:element name="nhanvien" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="manv"></xs:element>
-                            <xs:element name="hoten"></xs:element>
-                            <xs:element name="gioitinh"></xs:element>
-                            <xs:element name="sdt"></xs:element>
-                            <xs:element name="diachi"></xs:element>
-                            <xs:element name="chucvu"></xs:element>
+                            <xs:element name="manv">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="NV\d{8}"></xs:pattern>
+                                        <xs:maxLength value="10"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hoten" type="HoTenType"></xs:element>
+                            <xs:element name="gioitinh" type="GioiTinhType"></xs:element>
+                            <xs:element name="sdt" type="SoDienThoaiType"></xs:element>
+                            <xs:element name="diachi" type="xs:string"></xs:element>
+                            <xs:element name="chucvu">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Phát Thẻ"/>
+                                        <xs:enumeration value="Sắp Xếp Xe"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -59,8 +80,22 @@
                 <xs:element name="banggia" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mabg"></xs:element>
-                            <xs:element name="giatheogio"></xs:element>
+                            <xs:element name="mabg">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="BG\d{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="giatheogio">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:totalDigits value="12"/>   
+                                        <xs:fractionDigits value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -68,10 +103,22 @@
                 <xs:element name="calam" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="macl"></xs:element>
-                            <xs:element name="tencalam"></xs:element>
-                            <xs:element name="giobatdau"></xs:element>
-                            <xs:element name="gioketthuc"></xs:element>
+                            <xs:element name="macl">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="CA\d{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="tencalam">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                       <xs:maxLength value="50"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="giobatdau" type="xs:time"></xs:element>
+                            <xs:element name="gioketthuc" type="xs:time"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -79,8 +126,8 @@
                 <xs:element name="thexe" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mathe"></xs:element>
-                            <xs:element name="trangthai"></xs:element>
+                            <xs:element name="mathe" type="xs:integer"></xs:element>
+                            <xs:element name="trangthai" type="xs:boolean"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -89,7 +136,13 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="malx"></xs:element>
-                            <xs:element name="tenloaixe"></xs:element>
+                            <xs:element name="tenloaixe">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="50"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                             <xs:element name="mabg"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
@@ -108,8 +161,8 @@
                 <xs:element name="lichphancong" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mapc"></xs:element>
-                            <xs:element name="ngayphancong"></xs:element>
+                            <xs:element name="mapc" type="xs:integer"></xs:element>
+                            <xs:element name="ngayphancong" type="xs:date"></xs:element>
                             <xs:element name="manv"></xs:element>
                             <xs:element name="macl"></xs:element>
                         </xs:sequence>
@@ -119,11 +172,11 @@
                 <xs:element name="luotgiuxe" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="maluot"></xs:element>
+                            <xs:element name="maluot" type="xs:integer"></xs:element>
                             <xs:element name="bienso"></xs:element>
                             <xs:element name="mathe"></xs:element>
-                            <xs:element name="thoigianvao"></xs:element>
-                            <xs:element name="thoigianra"></xs:element>
+                            <xs:element name="thoigianvao" type="xs:dateTime"></xs:element>
+                            <xs:element name="thoigianra" type="xs:dateTime"></xs:element>
                             <xs:element name="mapc"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
@@ -133,8 +186,16 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="mahd"></xs:element>
-                            <xs:element name="ngaylap"></xs:element>
-                            <xs:element name="tongtien"></xs:element>
+                            <xs:element name="ngaylap" type="xs:dateTime"></xs:element>
+                            <xs:element name="tongtien">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:totalDigits value="12"/>   
+                                        <xs:fractionDigits value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                             <xs:element name="maluot"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
