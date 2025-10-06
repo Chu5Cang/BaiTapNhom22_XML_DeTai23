@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hethongbaigiuxe>
+    
+    <!-- khách hàng 1 -->
+    <khachhang>
+        <makh>KH001</makh>
+        <hoten>Nguyễn Huy Khang</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0912345678</sdt>
+        <diachi>123 Cái Khế, Quận Ninh Kiều, TP.Cần Thơ</diachi>
+    </khachhang>
+    <!-- khách hàng 2 -->
+    <khachhang>
+        <makh>KH002</makh>
+        <hoten>Trần Thị Bích</hoten>
+        <gioitinh>Nữ</gioitinh>
+        <sdt>0987654321</sdt>
+        <diachi>45 Nguyễn Trãi, Quận 5, TP.HCM</diachi>
+    </khachhang>
+    <!-- khách hàng 3 -->
+    <khachhang>
+        <makh>KH003</makh>
+        <hoten>Lê Văn Cường</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0901234567</sdt>
+        <diachi>12 Trần Hưng Đạo, Quận Ninh Kiều, TP.Cần Thơ</diachi>
+    </khachhang>
+    <!-- khách hàng 4 -->
+    <khachhang>
+        <makh>KH004</makh>
+        <hoten>Phạm Hường Châu</hoten>
+        <gioitinh>Nữ</gioitinh>
+        <sdt>0978123456</sdt>
+        <diachi>78 Hai Bà Trưng, Hà Nội</diachi>
+    </khachhang>
+    <!-- khách hàng 5 -->
+    <khachhang>
+        <makh>KH005</makh>
+        <hoten>Võ Hoàng Khoa</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0934567890</sdt>
+        <diachi>56 Cách Mạng Tháng 8, Quận 3, TP.HCM</diachi>
+    </khachhang>
+    <!-- khách hàng 6 -->
+    <khachhang>
+        <makh>KH006</makh>
+        <hoten>Nguyễn Thị Lan</hoten>
+        <gioitinh>Nữ</gioitinh>
+        <sdt>0911122233</sdt>
+        <diachi>34 Lý Thường Kiệt, Huế</diachi>
+    </khachhang>
+    <!-- khách hàng 7 -->
+    <khachhang>
+        <makh>KH007</makh>
+        <hoten>Đặng Quang Huy</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0944455566</sdt>
+        <diachi>89 Võ Thị Sáu, Vũng Tàu</diachi>
+    </khachhang>
+    <!-- khách hàng 8 -->
+    <khachhang>
+        <makh>KH008</makh>
+        <hoten>Trần Kim Ngân</hoten>
+        <gioitinh>Nữ</gioitinh>
+        <sdt>0923344556</sdt>
+        <diachi>21 Nguyễn Văn Cừ, Cần Thơ</diachi>
+    </khachhang>
+    <!-- khách hàng 9 -->
+    <khachhang>
+        <makh>KH009</makh>
+        <hoten>Hoàng Tuấn Kiệt</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0967788990</sdt>
+        <diachi>67 Phan Đình Phùng, Đà Lạt</diachi>
+    </khachhang>
+    <!-- khách hàng 10 -->
+    <khachhang>
+        <makh>KH010</makh>
+        <hoten>Nguyễn Bảo Hân</hoten>
+        <gioitinh>Nữ</gioitinh>
+        <sdt>0933111222</sdt>
+        <diachi>145 Điện Biên Phủ, Bình Thạnh, TP.HCM</diachi>
+    </khachhang>
+    
+    <!-- Nhân viên 1 -->
+    <nhanvien>
+        <manv>NV00000001</manv>
+        <hoten>Nguyễn Văn Minh</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0909123456</sdt>
+        <diachi>12 Lê Lợi, TP.Cần Thơ</diachi>
+        <chucvu>Phát Thẻ</chucvu>
+    </nhanvien>
+    <!-- Nhân viên 2 -->
+    <nhanvien>
+        <manv>NV00000002</manv>
+        <hoten>Trần Thị Hạnh</hoten>
+        <gioitinh>Nữ</gioitinh>
+        <sdt>0934455667</sdt>
+        <diachi>45 Nguyễn Văn Cừ, Cần Thơ</diachi>
+        <chucvu>Sắp Xếp Xe</chucvu>
+    </nhanvien>
+    <!-- Nhân viên 3 -->
+    <nhanvien>
+        <manv>NV00000003</manv>
+        <hoten>Lê Văn Hùng</hoten>
+        <gioitinh>Nam</gioitinh>
+        <sdt>0912345678</sdt>
+        <diachi>78 Trần Phú, Đà Nẵng</diachi>
+        <chucvu>Thu Ngân</chucvu>
+    </nhanvien>
+    <!-- bảng giá 1 -->
+    <banggia>
+        <mabg>BG001</mabg>
+        <giatheogio>5000</giatheogio>
+    </banggia>
+    <!-- bảng giá 2 -->
+    <banggia>
+        <mabg>BG002</mabg>
+        <giatheogio>10000</giatheogio>
+    </banggia>
+    
+    <!-- ca làm 1 -->
+    <calam>
+        <macl>CA001</macl>
+        <tencalam>Sáng</tencalam>
+        <giobatdau>06:00:00</giobatdau>
+        <gioketthuc>14:00:00</gioketthuc>
+    </calam>
+    <!-- ca làm 2 -->
+    <calam>
+        <macl>CA002</macl>
+        <tencalam>Chiều</tencalam>
+        <giobatdau>14:00:00</giobatdau>
+        <gioketthuc>22:00:00</gioketthuc>
+    </calam>
+    <!-- ca làm 3 -->
+    <calam>
+        <macl>CA003</macl>
+        <tencalam>Tối</tencalam>
+        <giobatdau>22:00:00</giobatdau>
+        <gioketthuc>06:00:00</gioketthuc>
+    </calam>
+    <!-- thẻ xe -->
+    <thexe>
+        <mathe>1</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>2</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>3</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>4</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>5</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>6</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>7</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>8</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>9</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>10</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>11</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>12</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>13</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>14</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>15</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>16</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>17</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>18</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>19</mathe>
+        <trangthai>true</trangthai>
+    </thexe>
+    <thexe>
+        <mathe>20</mathe>
+        <trangthai>false</trangthai>
+    </thexe>
+    <!-- loại xe 1 -->
+    <loaixe>
+        <malx>LX001</malx>
+        <tenloaixe>Xe máy</tenloaixe>
+        <mabg>BG001</mabg>
+    </loaixe>
+    <!-- loại xe 2 -->
+    <loaixe>
+        <malx>LX002</malx>
+        <tenloaixe>Xe Ô tô</tenloaixe>
+        <mabg>BG002</mabg>
+    </loaixe>
+    
+    <!-- xe 1 -->
+    <xe>
+        <bienso>79A-12345</bienso>
+        <makh>KH001</makh>
+        <malx>LX001</malx>
+    </xe>
+    <!-- xe 2 -->
+    <xe>
+        <bienso>59B-67890</bienso>
+        <makh>KH002</makh>
+        <malx>LX002</malx>
+    </xe>
+    <!-- xe 3 -->
+    <xe>
+        <bienso>43C-11223</bienso>
+        <makh>KH003</makh>
+        <malx>LX001</malx>
+    </xe>
+    <!-- xe 4 -->
+    <xe>
+        <bienso>88D-33445</bienso>
+        <makh>KH004</makh>
+        <malx>LX002</malx>
+    </xe>
+    <!-- xe 5 -->
+    <xe>
+        <bienso>77E-55667</bienso>
+        <makh>KH005</makh>
+        <malx>LX001</malx>
+    </xe>
+    <!-- xe 6 -->
+    <xe>
+        <bienso>66F-77889</bienso>
+        <makh>KH006</makh>
+        <malx>LX002</malx>
+    </xe>
+    <!-- xe 7 -->
+    <xe>
+        <bienso>55G-99001</bienso>
+        <makh>KH007</makh>
+        <malx>LX001</malx>
+    </xe>
+    <!-- xe 8 -->
+    <xe>
+        <bienso>44H-22334</bienso>
+        <makh>KH008</makh>
+        <malx>LX002</malx>
+    </xe>
+    <!-- xe 9 -->
+    <xe>
+        <bienso>33I-44556</bienso>
+        <makh>KH009</makh>
+        <malx>LX001</malx>
+    </xe>
+    <!-- xe 10 -->
+    <xe>
+        <bienso>22J-66778</bienso>
+        <makh>KH010</makh>
+        <malx>LX002</malx>
+    </xe>
+
+   <!-- Lịch phân công 1-->
+    <lichphancong>
+        <mapc>PC001</mapc>
+        <ngayphancong>2024-10-01</ngayphancong>
+        <manv>NV00000001</manv>
+        <macl>CA001</macl>
+    </lichphancong>
+    <!-- Lịch phân công 2 -->
+    <lichphancong>
+        <mapc>PC002</mapc>
+        <ngayphancong>2024-10-01</ngayphancong>
+        <manv>NV00000002</manv>
+        <macl>CA002</macl>
+    </lichphancong>
+    <!-- Lịch phân công 3 -->
+    <lichphancong>
+        <mapc>PC003</mapc>
+        <ngayphancong>2024-10-01</ngayphancong>
+        <manv>NV00000003</manv>
+        <macl>CA003</macl>
+    </lichphancong>
+
+    <!-- Lượt giữ xe 1-->
+    <luotgiuxe>
+        <maluot>1</maluot>
+        <bienso>79A-12345</bienso>
+        <mathe>1</mathe>
+        <thoigianvao>2024-10-01T09:30:00</thoigianvao>
+        <thoigianra>2024-10-01T11:30:00</thoigianra>
+        <mapc>PC001</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 2-->
+    <luotgiuxe>
+        <maluot>2</maluot>
+        <bienso>59B-67890</bienso>
+        <mathe>2</mathe>
+        <thoigianvao>2024-10-01T10:00:00</thoigianvao>
+        <thoigianra>2024-10-01T12:00:00</thoigianra>
+        <mapc>PC001</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 3-->
+    <luotgiuxe>
+        <maluot>3</maluot>
+        <bienso>43C-11223</bienso>
+        <mathe>3</mathe>
+        <thoigianvao>2024-10-01T11:00:00</thoigianvao>
+        <thoigianra>2024-10-01T13:00:00</thoigianra>
+        <mapc>PC002</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 4-->
+    <luotgiuxe>
+        <maluot>4</maluot>
+        <bienso>88D-33445</bienso>
+        <mathe>4</mathe>
+        <thoigianvao>2024-10-01T12:30:00</thoigianvao>
+        <thoigianra>2024-10-01T14:30:00</thoigianra>
+        <mapc>PC002</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 5-->
+    <luotgiuxe>
+        <maluot>5</maluot>
+        <bienso>77E-55667</bienso>
+        <mathe>5</mathe>
+        <thoigianvao>2024-10-01T13:00:00</thoigianvao>
+        <thoigianra>2024-10-01T15:00:00</thoigianra>
+        <mapc>PC003</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 6-->
+    <luotgiuxe>
+        <maluot>6</maluot>
+        <bienso>66F-77889</bienso>
+        <mathe>6</mathe>
+        <thoigianvao>2024-10-01T14:00:00</thoigianvao>
+        <thoigianra>2024-10-01T16:00:00</thoigianra>
+        <mapc>PC003</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 7-->
+    <luotgiuxe>
+        <maluot>7</maluot>
+        <bienso>55G-99001</bienso>
+        <mathe>7</mathe>
+        <thoigianvao>2024-10-01T15:30:00</thoigianvao>
+        <thoigianra>2024-10-01T17:30:00</thoigianra>
+        <mapc>PC001</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 8-->
+    <luotgiuxe>
+        <maluot>8</maluot>
+        <bienso>44H-22334</bienso>
+        <mathe>8</mathe>
+        <thoigianvao>2024-10-01T16:00:00</thoigianvao>
+        <thoigianra>2024-10-01T18:00:00</thoigianra>
+        <mapc>PC001</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 9-->
+    <luotgiuxe>
+        <maluot>9</maluot>
+        <bienso>33I-44556</bienso>
+        <mathe>9</mathe>
+        <thoigianvao>2024-10-01T17:00:00</thoigianvao>
+        <thoigianra>2024-10-01T19:00:00</thoigianra>
+        <mapc>PC002</mapc>
+    </luotgiuxe>
+    <!-- Lượt giữ xe 10-->
+    <luotgiuxe>
+        <maluot>10</maluot>
+        <bienso>22J-66778</bienso>
+        <mathe>10</mathe>
+        <thoigianvao>2024-10-01T18:30:00</thoigianvao>
+        <thoigianra>2024-10-01T20:30:00</thoigianra>
+        <mapc>PC002</mapc>
+    </luotgiuxe>
+    <!-- Hóa đơn 1 -->
+    <hoadon>
+        <mahd>HD001</mahd>
+        <ngaylap>2024-10-01T11:35:00</ngaylap>
+        <tongtien>10000</tongtien>
+        <maluot>1</maluot>
+    </hoadon>
+    <!-- Hóa đơn 2 -->
+    <hoadon>
+        <mahd>HD002</mahd>
+        <ngaylap>2024-10-01T12:05:00</ngaylap>
+        <tongtien>20000</tongtien>
+        <maluot>2</maluot>
+    </hoadon>
+    <!-- Hóa đơn 3 -->
+    <hoadon>
+        <mahd>HD003</mahd>
+        <ngaylap>2024-10-01T13:05:00</ngaylap>
+        <tongtien>15000</tongtien>
+        <maluot>3</maluot>
+    </hoadon>
+    <!-- Hóa đơn 4 -->
+    <hoadon>
+        <mahd>HD004</mahd>
+        <ngaylap>2024-10-01T14:35:00</ngaylap>
+        <tongtien>25000</tongtien>
+        <maluot>4</maluot>
+    </hoadon>
+    <!-- Hóa đơn 5 -->
+    <hoadon>
+        <mahd>HD005</mahd>
+        <ngaylap>2024-10-01T15:05:00</ngaylap>
+        <tongtien>10000</tongtien>
+        <maluot>5</maluot>
+    </hoadon>
+    <!-- Hóa đơn 6 -->
+    <hoadon>
+        <mahd>HD006</mahd>
+        <ngaylap>2024-10-01T16:05:00</ngaylap>
+        <tongtien>20000</tongtien>
+        <maluot>6</maluot>
+    </hoadon>
+    <!-- Hóa đơn 7 -->
+    <hoadon>
+        <mahd>HD007</mahd>
+        <ngaylap>2024-10-01T17:35:00</ngaylap>
+        <tongtien>15000</tongtien>
+        <maluot>7</maluot>
+    </hoadon>
+    
+    <!-- Hóa đơn 8 -->
+    <hoadon>
+        <mahd>HD008</mahd>
+        <ngaylap>2024-10-01T18:05:00</ngaylap>
+        <tongtien>25000</tongtien>
+        <maluot>8</maluot>
+    </hoadon>
+    <!-- Hóa đơn 9 -->
+    <hoadon>
+        <mahd>HD009</mahd>
+        <ngaylap>2024-10-01T19:05:00</ngaylap>
+        <tongtien>10000</tongtien>
+        <maluot>9</maluot>
+    </hoadon>
+    <!-- Hóa đơn 10 -->
+    <hoadon>
+        <mahd>HD010</mahd>
+        <ngaylap>2024-10-01T20:05:00</ngaylap>
+        <tongtien>15000</tongtien>
+        <maluot>10</maluot>
+    </hoadon>
+    
+</hethongbaigiuxe>
