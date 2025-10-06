@@ -108,43 +108,43 @@
     <xe>
         <bienso>81D-44556</bienso>
         <malx>LX002</malx>
-        <makh>KH003</makh>
+        <makh>KH004</makh>
     </xe>
     <!-- xe 5 -->
     <xe>
         <bienso>72E-77889</bienso>
         <malx>LX001</malx>
-        <makh>KH004</makh>
+        <makh>KH005</makh>
     </xe>
     <!-- xe 6 -->
     <xe>
         <bienso>50F-99001</bienso>
         <malx>LX002</malx>
-        <makh>KH004</makh>
+        <makh>KH006</makh>
     </xe>
     <!-- xe 7 -->
     <xe>
         <bienso>88G-22334</bienso>
         <malx>LX001</malx>
-        <makh>KH004</makh>
+        <makh>KH007</makh>
     </xe>
     <!-- xe 8 -->
     <xe>
         <bienso>66H-55667</bienso>
         <malx>LX002</malx>
-        <makh>KH004</makh>
+        <makh>KH008</makh>
     </xe>
     <!-- xe 9 -->
     <xe>
         <bienso>39K-88990</bienso>
         <malx>LX001</malx>
-        <makh>KH004</makh>
+        <makh>KH009</makh>
     </xe>
     <!-- xe 10 -->
     <xe>
         <bienso>77L-10112</bienso>
         <malx>LX002</malx>
-        <makh>KH004</makh>
+        <makh>KH010</makh>
     </xe>
     
     
@@ -477,21 +477,21 @@
     <!-- Lịch phân công 1 -->
     <lichphancong>
         <mapc>PC001</mapc>
-        <manv>NV001</manv>
+        <manv>NV00000001</manv>
         <macl>CA001</macl>
         <ngayphancong>2024-10-01</ngayphancong>
     </lichphancong>
     <!-- Lịch phân công 2 -->
     <lichphancong>
         <mapc>PC002</mapc>
-        <manv>NV002</manv>
+        <manv>NV00000002</manv>
         <macl>CA002</macl>
         <ngayphancong>2024-10-01</ngayphancong>
     </lichphancong>
     <!-- Lịch phân công 3 -->
     <lichphancong>
         <mapc>PC003</mapc>
-        <manv>NV003</manv>
+        <manv>NV00000003</manv>
         <macl>CA003</macl>
         <ngayphancong>2024-10-01</ngayphancong>
     </lichphancong>
@@ -501,21 +501,21 @@
     <calam>
         <macl>CA001</macl>
         <tencalam>Ca sáng</tencalam>
-        <giobatdau>07:00</giobatdau>
-        <gioketthuc>15:00</gioketthuc>
+        <giobatdau>06:00:00</giobatdau>
+        <gioketthuc>14:00:00</gioketthuc>
     </calam>
     <!-- Ca làm chiều -->
     <calam>
         <macl>CA002</macl>
         <tencalam>Ca chiều</tencalam>
-        <giobatdau>15:00</giobatdau>
-        <gioketthuc>23:00</gioketthuc>
+        <giobatdau>14:00:00</giobatdau>
+        <gioketthuc>22:00:00</gioketthuc>
     </calam>
     <!-- Ca làm đêm -->
     <calam>
         <macl>CA003</macl>
         <tencalam>Ca đêm</tencalam>
-        <giobatdau>23:00</giobatdau>
-        <gioketthuc>07:00</gioketthuc>
+        <giobatdau>22:00:00</giobatdau>
+        <gioketthuc>06:00:00</gioketthuc>
     </calam>
 </hethongbaigiuxe>

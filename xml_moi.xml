@@ -255,43 +255,43 @@
     </xe>
     <!-- xe 4 -->
     <xe>
-        <bienso>88D-33445</bienso>
+        <bienso>81D-44556</bienso>
         <makh>KH004</makh>
         <malx>LX002</malx>
     </xe>
     <!-- xe 5 -->
     <xe>
-        <bienso>77E-55667</bienso>
+        <bienso>72E-77889</bienso>
         <makh>KH005</makh>
         <malx>LX001</malx>
     </xe>
     <!-- xe 6 -->
     <xe>
-        <bienso>66F-77889</bienso>
+        <bienso>50F-99001</bienso>
         <makh>KH006</makh>
         <malx>LX002</malx>
     </xe>
     <!-- xe 7 -->
     <xe>
-        <bienso>55G-99001</bienso>
+        <bienso>88G-22334</bienso>
         <makh>KH007</makh>
         <malx>LX001</malx>
     </xe>
     <!-- xe 8 -->
     <xe>
-        <bienso>44H-22334</bienso>
+        <bienso>66H-55667</bienso>
         <makh>KH008</makh>
         <malx>LX002</malx>
     </xe>
     <!-- xe 9 -->
     <xe>
-        <bienso>33I-44556</bienso>
+        <bienso>39K-88990</bienso>
         <makh>KH009</makh>
         <malx>LX001</malx>
     </xe>
     <!-- xe 10 -->
     <xe>
-        <bienso>22J-66778</bienso>
+        <bienso>77L-10112</bienso>
         <makh>KH010</makh>
         <malx>LX002</malx>
     </xe>
@@ -348,7 +348,7 @@
     <!-- Lượt giữ xe 4-->
     <luotgiuxe>
         <maluot>4</maluot>
-        <bienso>88D-33445</bienso>
+        <bienso>81D-44556</bienso>
         <mathe>4</mathe>
         <thoigianvao>2024-10-01T12:30:00</thoigianvao>
         <thoigianra>2024-10-01T14:30:00</thoigianra>
@@ -357,7 +357,7 @@
     <!-- Lượt giữ xe 5-->
     <luotgiuxe>
         <maluot>5</maluot>
-        <bienso>77E-55667</bienso>
+        <bienso>72E-77889</bienso>
         <mathe>5</mathe>
         <thoigianvao>2024-10-01T13:00:00</thoigianvao>
         <thoigianra>2024-10-01T15:00:00</thoigianra>
@@ -366,7 +366,7 @@
     <!-- Lượt giữ xe 6-->
     <luotgiuxe>
         <maluot>6</maluot>
-        <bienso>66F-77889</bienso>
+        <bienso>50F-99001</bienso>
         <mathe>6</mathe>
         <thoigianvao>2024-10-01T14:00:00</thoigianvao>
         <thoigianra>2024-10-01T16:00:00</thoigianra>
@@ -375,7 +375,7 @@
     <!-- Lượt giữ xe 7-->
     <luotgiuxe>
         <maluot>7</maluot>
-        <bienso>55G-99001</bienso>
+        <bienso>88G-22334</bienso>
         <mathe>7</mathe>
         <thoigianvao>2024-10-01T15:30:00</thoigianvao>
         <thoigianra>2024-10-01T17:30:00</thoigianra>
@@ -384,7 +384,7 @@
     <!-- Lượt giữ xe 8-->
     <luotgiuxe>
         <maluot>8</maluot>
-        <bienso>44H-22334</bienso>
+        <bienso>66H-55667</bienso>
         <mathe>8</mathe>
         <thoigianvao>2024-10-01T16:00:00</thoigianvao>
         <thoigianra>2024-10-01T18:00:00</thoigianra>
@@ -393,7 +393,7 @@
     <!-- Lượt giữ xe 9-->
     <luotgiuxe>
         <maluot>9</maluot>
-        <bienso>33I-44556</bienso>
+        <bienso>39K-88990</bienso>
         <mathe>9</mathe>
         <thoigianvao>2024-10-01T17:00:00</thoigianvao>
         <thoigianra>2024-10-01T19:00:00</thoigianra>
@@ -402,7 +402,7 @@
     <!-- Lượt giữ xe 10-->
     <luotgiuxe>
         <maluot>10</maluot>
-        <bienso>22J-66778</bienso>
+        <bienso>77L-10112</bienso>
         <mathe>10</mathe>
         <thoigianvao>2024-10-01T18:30:00</thoigianvao>
         <thoigianra>2024-10-01T20:30:00</thoigianra>
