@@ -148,7 +148,7 @@
     </thexe>
     <thexe>
         <mathe>2</mathe>
-        <trangthai>false</trangthai>
+        <trangthai>true</trangthai>
     </thexe>
     <thexe>
         <mathe>3</mathe>
@@ -156,7 +156,7 @@
     </thexe>
     <thexe>
         <mathe>4</mathe>
-        <trangthai>false</trangthai>
+        <trangthai>true</trangthai>
     </thexe>
     <thexe>
         <mathe>5</mathe>
@@ -164,7 +164,7 @@
     </thexe>
     <thexe>
         <mathe>6</mathe>
-        <trangthai>false</trangthai>
+        <trangthai>true</trangthai>
     </thexe>
     <thexe>
         <mathe>7</mathe>
@@ -172,7 +172,7 @@
     </thexe>
     <thexe>
         <mathe>8</mathe>
-        <trangthai>false</trangthai>
+        <trangthai>true</trangthai>
     </thexe>
     <thexe>
         <mathe>9</mathe>
@@ -180,11 +180,11 @@
     </thexe>
     <thexe>
         <mathe>10</mathe>
-        <trangthai>false</trangthai>
+        <trangthai>true</trangthai>
     </thexe>
     <thexe>
         <mathe>11</mathe>
-        <trangthai>true</trangthai>
+        <trangthai>false</trangthai>
     </thexe>
     <thexe>
         <mathe>12</mathe>
@@ -192,7 +192,7 @@
     </thexe>
     <thexe>
         <mathe>13</mathe>
-        <trangthai>true</trangthai>
+        <trangthai>false</trangthai>
     </thexe>
     <thexe>
         <mathe>14</mathe>
@@ -200,7 +200,7 @@
     </thexe>
     <thexe>
         <mathe>15</mathe>
-        <trangthai>true</trangthai>
+        <trangthai>false</trangthai>
     </thexe>
     <thexe>
         <mathe>16</mathe>
@@ -208,7 +208,7 @@
     </thexe>
     <thexe>
         <mathe>17</mathe>
-        <trangthai>true</trangthai>
+        <trangthai>false</trangthai>
     </thexe>
     <thexe>
         <mathe>18</mathe>
@@ -216,7 +216,7 @@
     </thexe>
     <thexe>
         <mathe>19</mathe>
-        <trangthai>true</trangthai>
+        <trangthai>false</trangthai>
     </thexe>
     <thexe>
         <mathe>20</mathe>
