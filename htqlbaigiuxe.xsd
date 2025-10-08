@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    
-    <xs:simpleType name="MaType">
-        <xs:restriction base="xs:string">
-            <xs:maxLength value="10"/>
-        </xs:restriction>
-    </xs:simpleType>
-    
     <xs:simpleType name="HoTenType">
         <xs:restriction base="xs:string">
             <xs:maxLength value="50"></xs:maxLength>
@@ -17,14 +10,13 @@
     <xs:simpleType name="SoDienThoaiType">
         <xs:restriction base="xs:string">
             <xs:pattern value="0\d{9}"></xs:pattern>
-            <xs:maxLength value="10"></xs:maxLength>
         </xs:restriction>
     </xs:simpleType>
     
     <xs:simpleType name="GioiTinhType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Nam"/>
-            <xs:enumeration value="Nu"/>
+            <xs:enumeration value="Nữ"/>
         </xs:restriction>
     </xs:simpleType>
     
@@ -34,33 +26,24 @@
                 <xs:element name="khachhang" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="makh">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="KH\d{8}"></xs:pattern>
-                                        <xs:maxLength value="10"></xs:maxLength>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
                             <xs:element name="hoten" type="HoTenType"></xs:element>
                             <xs:element name="gioitinh" type="GioiTinhType"></xs:element>
                             <xs:element name="sdt" type="SoDienThoaiType"></xs:element>
                             <xs:element name="diachi" type="xs:string"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="makh" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="KH\d{2}\d{6}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="nhanvien" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="manv">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="NV\d{8}"></xs:pattern>
-                                        <xs:maxLength value="10"></xs:maxLength>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
                             <xs:element name="hoten" type="HoTenType"></xs:element>
                             <xs:element name="gioitinh" type="GioiTinhType"></xs:element>
                             <xs:element name="sdt" type="SoDienThoaiType"></xs:element>
@@ -74,19 +57,19 @@
                                 </xs:simpleType>
                             </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="manv" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="NV\d{2}\d{6}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="banggia" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mabg">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="BG\d{3}"></xs:pattern>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
                             <xs:element name="giatheogio">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:decimal">
@@ -97,19 +80,19 @@
                                 </xs:simpleType>
                             </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="mabg" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="BG\d{4}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="calam" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="macl">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="CA\d{3}"></xs:pattern>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
                             <xs:element name="tencalam">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
@@ -120,22 +103,28 @@
                             <xs:element name="giobatdau" type="xs:time"></xs:element>
                             <xs:element name="gioketthuc" type="xs:time"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="macl" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="CA\d{2}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="thexe" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mathe" type="xs:integer"></xs:element>
                             <xs:element name="trangthai" type="xs:boolean"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="mathe" type="xs:integer" use="required"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="loaixe" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="malx"></xs:element>
                             <xs:element name="tenloaixe">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
@@ -143,49 +132,95 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="mabg"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="malx" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="LX\d{4}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="mabgRef" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="BG\d{4}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="xe" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="bienso"></xs:element>
-                            <xs:element name="makh"></xs:element>
-                            <xs:element name="malx"></xs:element>
-                        </xs:sequence>
+                        <xs:attribute name="bienso" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="\d{2}-?[A-Z0-9]{1,2}-\d{3}\.\d{2}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="makhRef" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="KH\d{2}\d{6}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="malxRef" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="LX\d{4}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="lichphancong" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mapc" type="xs:integer"></xs:element>
                             <xs:element name="ngayphancong" type="xs:date"></xs:element>
-                            <xs:element name="manv"></xs:element>
-                            <xs:element name="macl"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="mapc" type="xs:integer" use="required"></xs:attribute>
+                        <xs:attribute name="manvRef" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="NV\d{2}\d{6}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="maclRef" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="CA\d{2}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="luotgiuxe" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="maluot" type="xs:integer"></xs:element>
-                            <xs:element name="bienso"></xs:element>
-                            <xs:element name="mathe"></xs:element>
                             <xs:element name="thoigianvao" type="xs:dateTime"></xs:element>
                             <xs:element name="thoigianra" type="xs:dateTime"></xs:element>
-                            <xs:element name="mapc"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="maluot" type="xs:integer" use="required"></xs:attribute>
+                        <xs:attribute name="biensoRef" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="\d{2}-?[A-Z0-9]{1,2}-\d{3}\.\d{2}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="matheRef" type="xs:integer" use="required"></xs:attribute>
+                        <xs:attribute name="mapcRef" type="xs:integer" use="required"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
                 
                 <xs:element name="hoadon" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="mahd"></xs:element>
                             <xs:element name="ngaylap" type="xs:dateTime"></xs:element>
                             <xs:element name="tongtien">
                                 <xs:simpleType>
@@ -196,11 +231,127 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="maluot"></xs:element>
                         </xs:sequence>
+                        <xs:attribute name="mahd" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="HD\d{2}\d{6}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="maluotRef" type="xs:string" use="required"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
+        
+        <!-- ===== RÀNG BUỘC KHÓA CHÍNH ===== -->
+        <xs:key name="khachhangKey">
+            <xs:selector xpath="khachhang"/>
+            <xs:field xpath="@makh"/>
+        </xs:key>
+        
+        <xs:key name="nhanvienKey">
+            <xs:selector xpath="nhanvien"/>
+            <xs:field xpath="@manv"/>
+        </xs:key>
+        
+        <xs:key name="banggiaKey">
+            <xs:selector xpath="banggia"/>
+            <xs:field xpath="@mabg"/>
+        </xs:key>
+        
+        <xs:key name="calamKey">
+            <xs:selector xpath="calam"/>
+            <xs:field xpath="@macl"/>
+        </xs:key>
+        
+        <xs:key name="thexeKey">
+            <xs:selector xpath="thexe"/>
+            <xs:field xpath="@mathe"/>
+        </xs:key>
+        
+        <xs:key name="loaixeKey">
+            <xs:selector xpath="loaixe"/>
+            <xs:field xpath="@malx"/>
+        </xs:key>
+        
+        <xs:key name="xeKey">
+            <xs:selector xpath="xe"/>
+            <xs:field xpath="@bienso"/>
+        </xs:key>
+        
+        <xs:key name="lichphancongKey">
+            <xs:selector xpath="lichphancong"/>
+            <xs:field xpath="@mapc"/>
+        </xs:key>
+        
+        <xs:key name="luotgiuxeKey">
+            <xs:selector xpath="luotgiuxe"/>
+            <xs:field xpath="@maluot"/>
+        </xs:key>
+        
+        <xs:key name="hoadonKey">
+            <xs:selector xpath="hoadon"/>
+            <xs:field xpath="@mahd"/>
+        </xs:key>
+        
+        <!-- ===== RÀNG BUỘC KHÓA NGOẠI ===== -->
+        <xs:keyref name="fxe_khachhang" refer="khachhangKey">
+            <xs:selector xpath="xe"/>
+            <xs:field xpath="@makhRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="fxe_loaixe" refer="loaixeKey">
+            <xs:selector xpath="xe"/>
+            <xs:field xpath="@malxRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="floaixe_banggia" refer="banggiaKey">
+            <xs:selector xpath="loaixe"/>
+            <xs:field xpath="@mabgRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="flichphancong_nhanvien" refer="nhanvienKey">
+            <xs:selector xpath="lichphancong"/>
+            <xs:field xpath="@manvRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="flichphancong_calam" refer="calamKey">
+            <xs:selector xpath="lichphancong"/>
+            <xs:field xpath="@maclRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="fluotgiuxe_xe" refer="xeKey">
+            <xs:selector xpath="luotgiuxe"/>
+            <xs:field xpath="@biensoRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="fluotgiuxe_thexe" refer="thexeKey">
+            <xs:selector xpath="luotgiuxe"/>
+            <xs:field xpath="@matheRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="fluotgiuxe_lichphancong" refer="lichphancongKey">
+            <xs:selector xpath="luotgiuxe"/>
+            <xs:field xpath="@mapcRef"/>
+        </xs:keyref>
+        
+        <xs:keyref name="fhoadon_luotgiuxe" refer="luotgiuxeKey">
+            <xs:selector xpath="hoadon"/>
+            <xs:field xpath="@maluotRef"/>
+        </xs:keyref>
+        
+        <!-- ===== RÀNG BUỘC DUY NHẤT ===== -->
+        <xs:unique name="u_sdt_khachhang">
+            <xs:selector xpath="khachhang"/>
+            <xs:field xpath="sdt"/>
+        </xs:unique>
+        
+        <xs:unique name="u_bienso_xe">
+            <xs:selector xpath="xe"/>
+            <xs:field xpath="@bienso"/>
+        </xs:unique>
+
     </xs:element>
 </xs:schema>
