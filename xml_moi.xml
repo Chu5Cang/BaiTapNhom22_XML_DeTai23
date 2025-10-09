@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hethongbaigiuxe>
+<hethongbaigiuxe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:noNamespaceSchemaLocation="htqlbaigiuxe.xsd"> 
     <!-- Khách hàng 1-->
     <khachhang makh="KH24000001">
         <hoten>Nguyễn Huy Khang</hoten>

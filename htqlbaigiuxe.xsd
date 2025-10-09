@@ -239,7 +239,7 @@
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="maluotRef" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="maluotRef" type="xs:integer" use="required"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
