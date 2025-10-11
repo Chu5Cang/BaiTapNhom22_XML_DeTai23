@@ -1,58 +1,75 @@
-<!ELEMENT hethongbaigiuxe (khachhangs, xes, loaixes, banggias, thexes, luotgiuxes, hoadons, nhanviens, lichphancongs, calams)>
+<!ELEMENT hethongbaigiuxe (khachhang+, nhanvien+, banggia+, calam+, thexe+, loaixe+, xe+, lichphancong+, luotgiuxe+, hoadon+)>
 
-<!ELEMENT khachhangs (khachhang+)>
-<!ELEMENT khachhang (makh, hoten, gioitinh, sdt, diachi)>
-<!ELEMENT makh (#PCDATA)>
+<!ELEMENT khachhang (hoten, gioitinh, sdt, diachi)>
+<!ATTLIST khachhang 
+    makh ID #REQUIRED>
+
 <!ELEMENT hoten (#PCDATA)>
 <!ELEMENT gioitinh (#PCDATA)>
 <!ELEMENT sdt (#PCDATA)>
 <!ELEMENT diachi (#PCDATA)>
 
-<!ELEMENT xes (xe+)>
-<!ELEMENT xe (bienso, malx, makh)>
-<!ELEMENT bienso (#PCDATA)>
-<!ELEMENT malx (#PCDATA)>
+<!ELEMENT nhanvien (hoten, gioitinh, sdt, diachi, chucvu)>
+<!ATTLIST nhanvien 
+    manv ID #REQUIRED>
 
-<!ELEMENT loaixes (loaixe+)>
-<!ELEMENT loaixe (malx, tenloaixe)>
-<!ELEMENT tenloaixe (#PCDATA)>
-
-<!ELEMENT banggias (banggia+)>
-<!ELEMENT banggia (mabg, malx, giatheogio)>
-<!ELEMENT mabg (#PCDATA)>
-<!ELEMENT giatheogio (#PCDATA)>
-
-<!ELEMENT thexes (thexe+)>
-<!ELEMENT thexe (mathe, trangthai)>
-<!ELEMENT mathe (#PCDATA)>
-<!ELEMENT trangthai (#PCDATA)>
-
-<!ELEMENT luotgiuxes (luotgiuxe+)>
-<!ELEMENT luotgiuxe (maluot, bienso, mathe, thoigianvao, thoigianra, mapc)>
-<!ELEMENT maluot (#PCDATA)>
-<!ELEMENT thoigianvao (#PCDATA)>
-<!ELEMENT thoigianra (#PCDATA)>
-<!ELEMENT mapc (#PCDATA)>
-
-<!ELEMENT hoadons (hoadon+)>
-<!ELEMENT hoadon (mahd, maluot, ngaylap, tongtien)>
-<!ELEMENT mahd (#PCDATA)>
-<!ELEMENT ngaylap (#PCDATA)>
-<!ELEMENT tongtien (#PCDATA)>
-
-<!ELEMENT nhanviens (nhanvien+)>
-<!ELEMENT nhanvien (manv, hoten, gioitinh, sdt, diachi, chucvu)>
-<!ELEMENT manv (#PCDATA)>
 <!ELEMENT chucvu (#PCDATA)>
 
-<!ELEMENT lichphancongs (lichphancong+)>
-<!ELEMENT lichphancong (mapc, manv, macl, ngayphancong)>
-<!ELEMENT mapc (#PCDATA)>
-<!ELEMENT ngayphancong (#PCDATA)>
+<!ELEMENT banggia (giatheogio)>
+<!ATTLIST banggia 
+    mabg ID #REQUIRED>
 
-<!ELEMENT calams (calam+)>
-<!ELEMENT calam (macl, tencalam, giobatdau, gioketthuc)>
-<!ELEMENT macl (#PCDATA)>
+<!ELEMENT giatheogio (#PCDATA)>
+
+<!ELEMENT calam (tencalam, giobatdau, gioketthuc)>
+<!ATTLIST calam 
+    macl ID #REQUIRED>
+
 <!ELEMENT tencalam (#PCDATA)>
 <!ELEMENT giobatdau (#PCDATA)>
 <!ELEMENT gioketthuc (#PCDATA)>
+
+<!ELEMENT thexe (trangthai)>
+<!ATTLIST thexe 
+    mathe ID #REQUIRED>
+
+<!ELEMENT trangthai (#PCDATA)>
+
+<!ELEMENT loaixe (tenloaixe)>
+<!ATTLIST loaixe 
+    malx ID #REQUIRED
+    mabgRef IDREF #REQUIRED>
+
+<!ELEMENT tenloaixe (#PCDATA)>
+
+<!ELEMENT xe EMPTY>
+<!ATTLIST xe 
+    bienso ID #REQUIRED
+    makhRef IDREF #REQUIRED
+    malxRef IDREF #REQUIRED>
+
+<!ELEMENT lichphancong (ngayphancong)>
+<!ATTLIST lichphancong 
+    mapc ID #REQUIRED
+    manvRef IDREF #REQUIRED
+    maclRef IDREF #REQUIRED>
+
+<!ELEMENT ngayphancong (#PCDATA)>
+
+<!ELEMENT luotgiuxe (thoigianvao, thoigianra)>
+<!ATTLIST luotgiuxe 
+    maluot ID #REQUIRED
+    biensoRef IDREF #REQUIRED
+    matheRef IDREF #REQUIRED
+    mapcRef IDREF #REQUIRED>
+
+<!ELEMENT thoigianvao (#PCDATA)>
+<!ELEMENT thoigianra (#PCDATA)>
+
+<!ELEMENT hoadon (ngaylap, tongtien)>
+<!ATTLIST hoadon 
+    mahd ID #REQUIRED
+    maluotRef IDREF #REQUIRED>
+
+<!ELEMENT ngaylap (#PCDATA)>
+<!ELEMENT tongtien (#PCDATA)>
