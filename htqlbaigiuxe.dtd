@@ -1,75 +1,59 @@
-<!ELEMENT hethongbaigiuxe (khachhang+, nhanvien+, banggia+, calam+, thexe+, loaixe+, xe+, lichphancong+, luotgiuxe+, hoadon+)>
+<!ELEMENT hethongbaigiuxe (
+    khachhang*, nhanvien*, banggia*, calam*, thexe*, loaixe*, xe*, lichphancong*, luotgiuxe*, hoadon*
+)>
 
 <!ELEMENT khachhang (hoten, gioitinh, sdt, diachi)>
-<!ATTLIST khachhang 
-    makh ID #REQUIRED>
-
+<!ATTLIST khachhang makh ID #REQUIRED>
 <!ELEMENT hoten (#PCDATA)>
 <!ELEMENT gioitinh (#PCDATA)>
 <!ELEMENT sdt (#PCDATA)>
 <!ELEMENT diachi (#PCDATA)>
 
 <!ELEMENT nhanvien (hoten, gioitinh, sdt, diachi, chucvu)>
-<!ATTLIST nhanvien 
-    manv ID #REQUIRED>
-
+<!ATTLIST nhanvien manv ID #REQUIRED>
 <!ELEMENT chucvu (#PCDATA)>
 
 <!ELEMENT banggia (giatheogio)>
-<!ATTLIST banggia 
-    mabg ID #REQUIRED>
-
+<!ATTLIST banggia mabg ID #REQUIRED>
 <!ELEMENT giatheogio (#PCDATA)>
 
 <!ELEMENT calam (tencalam, giobatdau, gioketthuc)>
-<!ATTLIST calam 
-    macl ID #REQUIRED>
-
+<!ATTLIST calam macl ID #REQUIRED>
 <!ELEMENT tencalam (#PCDATA)>
 <!ELEMENT giobatdau (#PCDATA)>
 <!ELEMENT gioketthuc (#PCDATA)>
 
 <!ELEMENT thexe (trangthai)>
-<!ATTLIST thexe 
-    mathe ID #REQUIRED>
-
-<!ELEMENT trangthai (#PCDATA)>
+<!ATTLIST thexe mathe ID #REQUIRED>
+<!ELEMENT trangthai EMPTY>
+<!ATTLIST trangthai giatri (true|false) #REQUIRED> 
 
 <!ELEMENT loaixe (tenloaixe)>
-<!ATTLIST loaixe 
-    malx ID #REQUIRED
-    mabgRef IDREF #REQUIRED>
-
+<!ATTLIST loaixe malx ID #REQUIRED
+                 mabgRef IDREF #REQUIRED>
 <!ELEMENT tenloaixe (#PCDATA)>
 
 <!ELEMENT xe EMPTY>
-<!ATTLIST xe 
-    bienso ID #REQUIRED
-    makhRef IDREF #REQUIRED
-    malxRef IDREF #REQUIRED>
+<!ATTLIST xe bienso ID #REQUIRED
+             makhRef IDREF #REQUIRED
+             malxRef IDREF #REQUIRED>
 
 <!ELEMENT lichphancong (ngayphancong)>
-<!ATTLIST lichphancong 
-    mapc ID #REQUIRED
-    manvRef IDREF #REQUIRED
-    maclRef IDREF #REQUIRED>
-
+<!ATTLIST lichphancong mapc ID #REQUIRED
+                         manvRef IDREF #REQUIRED
+                         maclRef IDREF #REQUIRED>
 <!ELEMENT ngayphancong (#PCDATA)>
 
 <!ELEMENT luotgiuxe (thoigianvao, thoigianra)>
-<!ATTLIST luotgiuxe 
-    maluot ID #REQUIRED
-    biensoRef IDREF #REQUIRED
-    matheRef IDREF #REQUIRED
-    mapcRef IDREF #REQUIRED>
-
+<!ATTLIST luotgiuxe maluot ID #REQUIRED
+                    biensoRef IDREF #REQUIRED
+                    matheRef IDREF #REQUIRED
+                    mapcRef IDREF #REQUIRED>
 <!ELEMENT thoigianvao (#PCDATA)>
 <!ELEMENT thoigianra (#PCDATA)>
 
 <!ELEMENT hoadon (ngaylap, tongtien)>
-<!ATTLIST hoadon 
-    mahd ID #REQUIRED
-    maluotRef IDREF #REQUIRED>
-
+<!ATTLIST hoadon mahd ID #REQUIRED
+                 maluotRef IDREF #REQUIRED>
 <!ELEMENT ngaylap (#PCDATA)>
 <!ELEMENT tongtien (#PCDATA)>

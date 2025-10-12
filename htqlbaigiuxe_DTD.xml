@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hethongbaigiuxe SYSTEM "htqlbaigiuxe.dtd">
+
 <hethongbaigiuxe> 
     <!-- Khách hàng -->
     <khachhang makh="KH24000001">
@@ -111,65 +114,65 @@
     </calam>
     
     <!-- Thẻ xe -->
-    <thexe mathe="1">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX1">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="2">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX2">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="3">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX3">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="4">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX4">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="5">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX5">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="6">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX6">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="7">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX7">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="8">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX8">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="9">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX9">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="10">
-        <trangthai>true</trangthai>
+    <thexe mathe="TX10">
+        <trangthai giatri="true"></trangthai>
     </thexe>
-    <thexe mathe="11">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX11">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="12">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX12">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="13">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX13">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="14">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX14">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="15">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX15">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="16">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX16">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="17">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX17">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="18">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX18">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="19">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX19">
+        <trangthai giatri="false"></trangthai>
     </thexe>
-    <thexe mathe="20">
-        <trangthai>false</trangthai>
+    <thexe mathe="TX20">
+        <trangthai giatri="false"></trangthai>
     </thexe>
     
     <!-- Loại xe -->
@@ -181,109 +184,109 @@
     </loaixe>
     
     <!-- Xe -->
-    <xe bienso="79A-123.45" makhRef="KH24000001" malxRef="LX0001"/>
-    <xe bienso="59B-678.90" makhRef="KH24000002" malxRef="LX0002"/>
-    <xe bienso="43C-112.23" makhRef="KH24000003" malxRef="LX0001"/>
-    <xe bienso="81D-445.56" makhRef="KH24000004" malxRef="LX0002"/>
-    <xe bienso="72E-778.89" makhRef="KH24000005" malxRef="LX0001"/>
-    <xe bienso="50F-990.01" makhRef="KH24000006" malxRef="LX0002"/>
-    <xe bienso="88G-223.34" makhRef="KH24000007" malxRef="LX0001"/>
-    <xe bienso="66H-556.67" makhRef="KH24000008" malxRef="LX0002"/>
-    <xe bienso="39K-889.90" makhRef="KH24000009" malxRef="LX0001"/>
-    <xe bienso="77L-101.12" makhRef="KH24000010" malxRef="LX0002"/>
+    <xe bienso="BS_79A-123.45" makhRef="KH24000001" malxRef="LX0001"/>
+    <xe bienso="BS_59B-678.90" makhRef="KH24000002" malxRef="LX0002"/>
+    <xe bienso="BS_43C-112.23" makhRef="KH24000003" malxRef="LX0001"/>
+    <xe bienso="BS_81D-445.56" makhRef="KH24000004" malxRef="LX0002"/>
+    <xe bienso="BS_72E-778.89" makhRef="KH24000005" malxRef="LX0001"/>
+    <xe bienso="BS_50F-990.01" makhRef="KH24000006" malxRef="LX0002"/>
+    <xe bienso="BS_88G-223.34" makhRef="KH24000007" malxRef="LX0001"/>
+    <xe bienso="BS_66H-556.67" makhRef="KH24000008" malxRef="LX0002"/>
+    <xe bienso="BS_39K-889.90" makhRef="KH24000009" malxRef="LX0001"/>
+    <xe bienso="BS_77L-101.12" makhRef="KH24000010" malxRef="LX0002"/>
     
     <!-- Lịch phân công -->
-    <lichphancong mapc="1" manvRef ="NV24000001" maclRef="CA01">
+    <lichphancong mapc="PC1" manvRef ="NV24000001" maclRef="CA01">
         <ngayphancong>2024-10-01</ngayphancong>
     </lichphancong>   
-    <lichphancong mapc="2" manvRef ="NV24000002" maclRef="CA02">
+    <lichphancong mapc="PC2" manvRef ="NV24000002" maclRef="CA02">
         <ngayphancong>2024-10-01</ngayphancong>
     </lichphancong>
-    <lichphancong mapc="3" manvRef ="NV24000003" maclRef="CA03">
+    <lichphancong mapc="PC3" manvRef ="NV24000003" maclRef="CA03">
         <ngayphancong>2024-10-01</ngayphancong>
     </lichphancong>
     
     
     <!-- Lượt giữ xe -->
-    <luotgiuxe maluot="1" biensoRef="79A-123.45" matheRef="1" mapcRef="1">
+    <luotgiuxe maluot="L1" biensoRef="BS_79A-123.45" matheRef="TX1" mapcRef="PC1">
         <thoigianvao>2024-10-01T09:30:00</thoigianvao>
         <thoigianra>2024-10-01T11:30:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="2" biensoRef="59B-678.90" matheRef="2" mapcRef="1">
+    <luotgiuxe maluot="L2" biensoRef="BS_59B-678.90" matheRef="TX2" mapcRef="PC1">
         <thoigianvao>2024-10-01T10:00:00</thoigianvao>
         <thoigianra>2024-10-01T12:00:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="3" biensoRef="43C-112.23" matheRef="3" mapcRef="2">
+    <luotgiuxe maluot="L3" biensoRef="BS_43C-112.23" matheRef="TX3" mapcRef="PC2">
         <thoigianvao>2024-10-01T11:00:00</thoigianvao>
         <thoigianra>2024-10-01T13:00:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="4" biensoRef="81D-445.56" matheRef="4" mapcRef="2">
+    <luotgiuxe maluot="L4" biensoRef="BS_81D-445.56" matheRef="TX4" mapcRef="PC2">
         <thoigianvao>2024-10-01T12:30:00</thoigianvao>
         <thoigianra>2024-10-01T14:30:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="5" biensoRef="72E-778.89" matheRef="5" mapcRef="3">
+    <luotgiuxe maluot="L5" biensoRef="BS_72E-778.89" matheRef="TX5" mapcRef="PC3">
         <thoigianvao>2024-10-01T13:00:00</thoigianvao>
         <thoigianra>2024-10-01T15:00:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="6" biensoRef="50F-990.01" matheRef="6" mapcRef="3">
+    <luotgiuxe maluot="L6" biensoRef="BS_50F-990.01" matheRef="TX6" mapcRef="PC3">
         <thoigianvao>2024-10-01T14:00:00</thoigianvao>
         <thoigianra>2024-10-01T16:00:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="7" biensoRef="88G-223.34" matheRef="7" mapcRef="1">
+    <luotgiuxe maluot="L7" biensoRef="BS_88G-223.34" matheRef="TX7" mapcRef="PC1">
         <thoigianvao>2024-10-01T15:30:00</thoigianvao>
         <thoigianra>2024-10-01T17:30:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="8" biensoRef="66H-556.67" matheRef="8" mapcRef="1">
+    <luotgiuxe maluot="L8" biensoRef="BS_66H-556.67" matheRef="TX8" mapcRef="PC1">
         <thoigianvao>2024-10-01T16:00:00</thoigianvao>
         <thoigianra>2024-10-01T18:00:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="9" biensoRef="39K-889.90" matheRef="9" mapcRef="2">
+    <luotgiuxe maluot="L9" biensoRef="BS_39K-889.90" matheRef="TX9" mapcRef="PC2">
         <thoigianvao>2024-10-01T17:00:00</thoigianvao>
         <thoigianra>2024-10-01T19:00:00</thoigianra>
     </luotgiuxe>
-    <luotgiuxe maluot="10" biensoRef="77L-101.12" matheRef="10" mapcRef="2">
+    <luotgiuxe maluot="L10" biensoRef="BS_77L-101.12" matheRef="TX10" mapcRef="PC2">
         <thoigianvao>2024-10-01T18:30:00</thoigianvao>
         <thoigianra>2024-10-01T20:30:00</thoigianra>
     </luotgiuxe>
     
     <!-- Hóa đơn -->
-    <hoadon mahd="HD24000001" maluotRef="1">
+    <hoadon mahd="HD24000001" maluotRef="L1">
         <ngaylap>2024-10-01T11:35:00</ngaylap>
         <tongtien>10000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000002" maluotRef="2">
+    <hoadon mahd="HD24000002" maluotRef="L2">
         <ngaylap>2024-10-01T12:05:00</ngaylap>
         <tongtien>20000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000003" maluotRef="3">
+    <hoadon mahd="HD24000003" maluotRef="L3">
         <ngaylap>2024-10-01T13:05:00</ngaylap>
         <tongtien>15000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000004" maluotRef="4">
+    <hoadon mahd="HD24000004" maluotRef="L4">
         <ngaylap>2024-10-01T14:35:00</ngaylap>
         <tongtien>25000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000005" maluotRef="5">
+    <hoadon mahd="HD24000005" maluotRef="L5">
         <ngaylap>2024-10-01T15:05:00</ngaylap>
         <tongtien>10000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000006" maluotRef="6">
+    <hoadon mahd="HD24000006" maluotRef="L6">
         <ngaylap>2024-10-01T16:05:00</ngaylap>
         <tongtien>20000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000007" maluotRef="7">
+    <hoadon mahd="HD24000007" maluotRef="L7">
         <ngaylap>2024-10-01T17:35:00</ngaylap>
         <tongtien>15000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000008" maluotRef="8">
+    <hoadon mahd="HD24000008" maluotRef="L8">
         <ngaylap>2024-10-01T18:05:00</ngaylap>
         <tongtien>25000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000009" maluotRef="9">
+    <hoadon mahd="HD24000009" maluotRef="L9">
         <ngaylap>2024-10-01T19:05:00</ngaylap>
         <tongtien>10000</tongtien>
     </hoadon>
-    <hoadon mahd="HD24000010" maluotRef="10">
+    <hoadon mahd="HD24000010" maluotRef="L10">
         <ngaylap>2024-10-01T20:05:00</ngaylap>
         <tongtien>15000</tongtien>
     </hoadon>
