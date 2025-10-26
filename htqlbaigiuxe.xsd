@@ -4,15 +4,21 @@
 
     <!-- Kiểu dữ liệu Mã dùng chung khóa chính và khóa ngoại -->
     <xs:simpleType name="MaTheType">
-        <xs:restriction base="xs:integer"/>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="MaLuotType">
-        <xs:restriction base="xs:integer"/>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
     </xs:simpleType>
     
     <xs:simpleType name="MaPhanCongType">
-        <xs:restriction base="xs:integer"/>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
     </xs:simpleType>
     
     <xs:simpleType name="MaKHType">
@@ -225,7 +231,7 @@
             </xs:sequence>
         </xs:complexType>
         
-        <!-- ===== RÀNG BUỘC KHÓA CHÍNH ===== -->
+        <!-- RÀNG BUỘC KHÓA CHÍNH -->
         <xs:key name="khachhangKey">
             <xs:selector xpath="khachhang"/>
             <xs:field xpath="@makh"/>
@@ -276,7 +282,7 @@
             <xs:field xpath="@mahd"/>
         </xs:key>
         
-        <!-- ===== RÀNG BUỘC KHÓA NGOẠI ===== -->
+        <!-- RÀNG BUỘC KHÓA NGOẠI -->
         <xs:keyref name="fxe_khachhang" refer="khachhangKey">
             <xs:selector xpath="xe"/>
             <xs:field xpath="@makhRef"/>
