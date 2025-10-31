@@ -1,1 +1,23 @@
-// Lập lịch nhân viên (Tạo/quan sát lichphancong)
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "LapLich",
+  "type": "object",
+  "properties": {
+    "lichphancong": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mapc": {"type": "string"},
+          "manvRef": {"type": "string", "pattern": "^NV\\d{2}\\d{6}$"},
+          "maclRef": {"type": "string", "pattern": "^CA\\d{2}$"},
+          "ngayphancong": {"type": "string", "format": "date"}
+        },
+        "required": ["mapc", "manvRef", "maclRef", "ngayphancong"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["lichphancong"],
+  "additionalProperties": false
+}

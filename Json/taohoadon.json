@@ -1,1 +1,23 @@
-// Tạo hóa đơn
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "TaoHoaDon",
+  "type": "object",
+  "properties": {
+    "hoadon": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mahd": {"type": "string", "pattern": "^HD\\d{2}\\d{6}$"},
+          "maluotRef": {"type": "string"},
+          "ngaylap": {"type": "string", "format": "date-time"},
+          "tongtien": {"type": "number", "exclusiveMinimum": 0}
+        },
+        "required": ["mahd", "maluotRef", "ngaylap", "tongtien"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["hoadon"],
+  "additionalProperties": false
+}
