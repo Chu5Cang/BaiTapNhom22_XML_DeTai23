@@ -1,0 +1,34 @@
+{
+  "luotgiuxe": [
+    {
+      "maluot": "LG24000001",
+      "biensoRef": "51A-12345",
+      "matheRef": "TX240001",
+      "mapcRef": "1",
+      "thoigianvao": "2024-10-01T08:00:00",
+      "thoigianra": "2024-10-01T10:30:00",
+      "tongthoigian": 150,
+      "tongtien": 15000
+    },
+    {
+      "maluot": "LG24000002",
+      "biensoRef": "65B-54321",
+      "matheRef": "TX240002",
+      "mapcRef": "2",
+      "thoigianvao": "2024-10-01T09:15:00",
+      "thoigianra": "2024-10-01T11:00:00",
+      "tongthoigian": 105,
+      "tongtien": 10500
+    },
+    {
+      "maluot": "LG24000003",
+      "biensoRef": "59C-11111",
+      "matheRef": "TX240003",
+      "mapcRef": "3",
+      "thoigianvao": "2024-10-01T10:00:00",
+      "thoigianra": "2024-10-01T11:00:00",
+      "tongthoigian": 60,
+      "tongtien": 6000
+    }
+  ]
+}

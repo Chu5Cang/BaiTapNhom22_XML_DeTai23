@@ -1,0 +1,28 @@
+
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "LuotGiuXe",
+  "type": "object",
+  "properties": {
+    "luotgiuxe": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "maluot": {"type": "string","pattern": "^LG\\d{2}\\d{6}$"},
+          "biensoRef": {"type": "string"},
+          "matheRef": {"type": "string","pattern": "^TX\\d{2}\\d{4}$"},
+          "mapcRef": {"type": "string"},
+          "thoigianvao": {"type": "string","format": "date-time"},
+          "thoigianra": {"type": "string","format": "date-time"},
+          "tongthoigian": {"type": "integer","minimum": 0},
+          "tongtien": {"type": "number","exclusiveMinimum": 0}
+        },
+        "required": ["maluot","biensoRef","matheRef","mapcRef","thoigianvao","thoigianra","tongthoigian","tongtien"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["luotgiuxe"],
+  "additionalProperties": false
+}
