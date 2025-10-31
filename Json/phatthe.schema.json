@@ -9,8 +9,7 @@
         "type": "object",
         "properties": {
           "mathe": {"type": "string","pattern": "^TX\\d{2}\\d{4}$"},
-          "trangthai": {
-            "type": "boolean"}
+          "trangthai": {"type": "boolean"}
         },
         "required": ["mathe", "trangthai"],
         "additionalProperties": false
