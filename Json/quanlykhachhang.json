@@ -1,0 +1,18 @@
+{
+  "khachhang": [
+    {
+      "makh": "KH24000001",
+      "hoten": "Nguyễn Huy Khang",
+      "gioitinh": "Nam",
+      "sdt": "0912345678",
+      "diachi": "123 Cái Khế, Quận Ninh Kiều, TP.Cần Thơ"
+    },
+    {
+      "makh": "KH24000002",
+      "hoten": "Trần Thị Bích",
+      "gioitinh": "Nữ",
+      "sdt": "0987654321",
+      "diachi": "45 Nguyễn Trãi, Quận 5, TP.HCM"
+    }
+  ]
+}

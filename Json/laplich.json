@@ -1,23 +1,22 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
-  "title": "LapLich",
-  "type": "object",
-  "properties": {
-    "lichphancong": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "mapc": {"type": "string"},
-          "manvRef": {"type": "string", "pattern": "^NV\\d{2}\\d{6}$"},
-          "maclRef": {"type": "string", "pattern": "^CA\\d{2}$"},
-          "ngayphancong": {"type": "string", "format": "date"}
-        },
-        "required": ["mapc", "manvRef", "maclRef", "ngayphancong"],
-        "additionalProperties": false
-      }
+  "lichphancong": [
+    {
+      "mapc": "1",
+      "manvRef": "NV24000001",
+      "maclRef": "CA01",
+      "ngayphancong": "2024-10-01"
+    },
+    {
+      "mapc": "2",
+      "manvRef": "NV24000002",
+      "maclRef": "CA02",
+      "ngayphancong": "2024-10-01"
+    },
+    {
+      "mapc": "3",
+      "manvRef": "NV24000003",
+      "maclRef": "CA03",
+      "ngayphancong": "2024-10-01"
     }
-  },
-  "required": ["lichphancong"],
-  "additionalProperties": false
+  ]
 }

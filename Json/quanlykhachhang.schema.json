@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "KhachHang",
+  "type": "object",
+  "properties": {
+    "khachhang": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "makh": { "type": "string", "pattern": "^KH\\d{2}\\d{6}$" },
+          "hoten": { "type": "string" },
+          "gioitinh": { "type": "string", "enum": ["Nam", "Nữ"] },
+          "sdt": { "type": "string", "pattern": "^0\\d{9,10}$" },
+          "diachi": { "type": "string" }
+        },
+        "required": ["makh", "hoten", "gioitinh", "sdt"]
+      }
+    }
+  },
+  "required": ["khachhang"]
+}
