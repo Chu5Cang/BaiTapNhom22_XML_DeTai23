@@ -1,35 +1,39 @@
-// Bổ sung thêm thẻ xe vào đây
 {
+  "thexe": [
+    { "mathe": 1, "trangthai": true },
+    { "mathe": 2, "trangthai": false },
+    { "mathe": 3, "trangthai": true }
+  ],
   "luotgiuxe": [
     {
-      "maluot": "LG24000001",
-      "biensoRef": "51A-12345",
-      "matheRef": "TX240001",
-      "mapcRef": "1",
-      "thoigianvao": "2024-10-01T08:00:00",
-      "thoigianra": "2024-10-01T10:30:00",
+      "maluot": "LG25000001",
+      "biensoRef": "65A-12345",
+      "matheRef": 1,
+      "mapcRef": "PC01",
+      "thoigianvao": "2025-11-01T06:45:00Z",
+      "thoigianra": "2025-11-01T08:15:00Z",
+      "tongthoigian": 90,
+      "tongtien": 10000.0
+    },
+    {
+      "maluot": "LG25000002",
+      "biensoRef": "65B-67890",
+      "matheRef": 2,
+      "mapcRef": "PC02",
+      "thoigianvao": "2025-11-01T09:00:00Z",
+      "thoigianra": "2025-11-01T12:30:00Z",
+      "tongthoigian": 210,
+      "tongtien": 20000.0
+    },
+    {
+      "maluot": "LG25000003",
+      "biensoRef": "65C-24680",
+      "matheRef": 3,
+      "mapcRef": "PC03",
+      "thoigianvao": "2025-11-01T13:15:00Z",
+      "thoigianra": "2025-11-01T15:45:00Z",
       "tongthoigian": 150,
-      "tongtien": 15000
-    },
-    {
-      "maluot": "LG24000002",
-      "biensoRef": "65B-54321",
-      "matheRef": "TX240002",
-      "mapcRef": "2",
-      "thoigianvao": "2024-10-01T09:15:00",
-      "thoigianra": "2024-10-01T11:00:00",
-      "tongthoigian": 105,
-      "tongtien": 10500
-    },
-    {
-      "maluot": "LG24000003",
-      "biensoRef": "59C-11111",
-      "matheRef": "TX240003",
-      "mapcRef": "3",
-      "thoigianvao": "2024-10-01T10:00:00",
-      "thoigianra": "2024-10-01T11:00:00",
-      "tongthoigian": 60,
-      "tongtien": 6000
+      "tongtien": 15000.0
     }
   ]
 }

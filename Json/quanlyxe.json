@@ -1,1 +1,12 @@
-// Quan ly xe gồm - loại xe và xe
+{
+  "loaixe": [
+    { "malx": "LX01", "mabgRef": "BG01", "tenloaixe": "Xe máy" },
+    { "malx": "LX02", "mabgRef": "BG02", "tenloaixe": "Ô tô" },
+    { "malx": "LX03", "mabgRef": "BG03", "tenloaixe": "Xe đạp điện" }
+  ],
+  "xe": [
+    { "bienso": "65A-12345", "makhRef": "KH24000003", "malxRef": "LX01" },
+    { "bienso": "65B-67890", "makhRef": "KH24000004", "malxRef": "LX02" },
+    { "bienso": "65C-11122", "makhRef": "KH24000005", "malxRef": "LX03" }
+  ]
+}
