@@ -31,3 +31,6 @@ print(tree.xpath("//luotgiuxe[@matheRef='5']/@biensoRef"))
 print("9. Lấy tên khách hàng có giới tính “Nữ” ở “Cần Thơ”")
 print(tree.xpath("//khachhang[gioitinh='Nữ' and contains(diachi, 'Cần Thơ')]/hoten/text()"))
 
+print("10. Lấy thông tin khách hàng thứ 5:")
+print(tree.xpath("//khachhang[5]/hoten/text()"))
+

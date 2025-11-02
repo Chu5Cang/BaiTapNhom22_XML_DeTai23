@@ -51,17 +51,20 @@
         
         <!-- 3 -->
         <h2>3. Tổng số thẻ xe đang hoạt động (trangthai = true)</h2>
-        <table>
+        <table style="width:15%">
           <tr><th>Tổng số thẻ đang hoạt động</th></tr>
-          <tr><td><xsl:value-of select="count(//thexe[trangthai='true'])"/></td></tr>
+          <tr><td style="text-align:center"><xsl:value-of select="count(//thexe[trangthai='true'])"/></td></tr>
         </table>
         
         <!-- 4 -->
         <h2>4. Biển số xe thuộc khách hàng “KH24000003”</h2>
         <table>
-          <tr><th>Biển số xe</th></tr>
+          <tr><th>Họ tên</th><th>Biển số xe</th></tr>
           <xsl:for-each select="//xe[@makhRef='KH24000003']">
-            <tr><td><xsl:value-of select="@bienso"/></td></tr>
+            <tr>
+              <td><xsl:value-of select="//khachhang[@makh=current()/@makhRef]/hoten"/></td>
+              <td><xsl:value-of select="@bienso"/></td>
+            </tr>
           </xsl:for-each>
         </table>
         
@@ -120,6 +123,19 @@
         <table>
           <tr><th>Họ tên</th><th>Giới tính</th><th>Địa chỉ</th></tr>
           <xsl:for-each select="//khachhang[gioitinh='Nữ' and contains(diachi, 'Cần Thơ')]">
+            <tr>
+              <td><xsl:value-of select="hoten"/></td>
+              <td><xsl:value-of select="gioitinh"/></td>
+              <td><xsl:value-of select="diachi"/></td>
+            </tr>
+          </xsl:for-each>
+        </table>
+        
+        <!-- 10 -->
+        <h2>10. Thông tin khách hàng thứ 5</h2>
+        <table>
+          <tr><th>Họ tên</th><th>Giới tính</th><th>Địa chỉ</th></tr>
+          <xsl:for-each select="//khachhang[5]">
             <tr>
               <td><xsl:value-of select="hoten"/></td>
               <td><xsl:value-of select="gioitinh"/></td>
