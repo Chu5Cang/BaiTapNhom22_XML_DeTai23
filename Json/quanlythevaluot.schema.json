@@ -20,16 +20,14 @@
       "items": {
         "type": "object",
         "properties": {
-          "maluot": { "type": "string", "pattern": "^LG\\d{2}\\d{6}$" },
-          "biensoRef": { "type": "string" },
+          "maluot": { "type": "integer", "minimum": 1 },
+          "biensoRef": { "type": "string", "pattern": "^\\d{2}[A-Z][A-Z0-9]?-\\d{3}\\.\\d{2}$" },
           "matheRef": {"type": "integer","minimum": 1},
-          "mapcRef": { "type": "string" },
+          "mapcRef": { "type": "integer", "minimum": 1 },
           "thoigianvao": { "type": "string", "format": "date-time" },
-          "thoigianra": { "type": "string", "format": "date-time" },
-          "tongthoigian": { "type": "integer", "minimum": 0 },
-          "tongtien": { "type": "number", "exclusiveMinimum": 0 }
+          "thoigianra": { "type": "string", "format": "date-time" }
         },
-        "required": ["maluot","biensoRef","matheRef","mapcRef","thoigianvao","thoigianra","tongthoigian","tongtien"],
+        "required": ["maluot","biensoRef","matheRef","mapcRef","thoigianvao","thoigianra"],
         "additionalProperties": false
       }
     }

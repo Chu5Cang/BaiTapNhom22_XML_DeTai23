@@ -1,19 +1,19 @@
 {
   "lichphancong": [
     {
-      "mapc": "1",
+      "mapc": 1,
       "manvRef": "NV24000001",
       "maclRef": "CA01",
       "ngayphancong": "2024-10-01"
     },
     {
-      "mapc": "2",
+      "mapc": 2,
       "manvRef": "NV24000002",
       "maclRef": "CA02",
       "ngayphancong": "2024-10-01"
     },
     {
-      "mapc": "3",
+      "mapc": 3,
       "manvRef": "NV24000003",
       "maclRef": "CA03",
       "ngayphancong": "2024-10-01"

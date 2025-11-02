@@ -9,7 +9,7 @@
         "type": "object",
         "properties": {
           "mahd": {"type": "string", "pattern": "^HD\\d{2}\\d{6}$"},
-          "maluotRef": {"type": "string"},
+          "maluotRef": {"type": "integer", "minimum": 1},
           "ngaylap": {"type": "string", "format": "date-time"},
           "tongtien": {"type": "number", "exclusiveMinimum": 0}
         },

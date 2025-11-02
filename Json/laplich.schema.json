@@ -8,7 +8,7 @@
       "items": {
         "type": "object",
         "properties": {
-          "mapc": {"type": "string"},
+          "mapc": {"type": "integer", "minimum": 1},
           "manvRef": {"type": "string", "pattern": "^NV\\d{2}\\d{6}$"},
           "maclRef": {"type": "string", "pattern": "^CA\\d{2}$"},
           "ngayphancong": {"type": "string", "format": "date"}

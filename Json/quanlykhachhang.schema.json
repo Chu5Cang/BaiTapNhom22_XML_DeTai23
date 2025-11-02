@@ -9,9 +9,9 @@
         "type": "object",
         "properties": {
           "makh": { "type": "string", "pattern": "^KH\\d{2}\\d{6}$" },
-          "hoten": { "type": "string" },
+          "hoten": { "type": "string", "maxLength": 50 },
           "gioitinh": { "type": "string", "enum": ["Nam", "Nữ"] },
-          "sdt": { "type": "string", "pattern": "^0\\d{9,10}$" },
+          "sdt": { "type": "string", "pattern": "^0\\d{9}$" },
           "diachi": { "type": "string" }
         },
         "required": ["makh", "hoten", "gioitinh", "sdt"]

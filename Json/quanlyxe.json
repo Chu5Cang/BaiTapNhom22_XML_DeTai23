@@ -1,12 +1,12 @@
 {
   "loaixe": [
-    { "malx": "LX01", "mabgRef": "BG01", "tenloaixe": "Xe máy" },
-    { "malx": "LX02", "mabgRef": "BG02", "tenloaixe": "Ô tô" },
-    { "malx": "LX03", "mabgRef": "BG03", "tenloaixe": "Xe đạp điện" }
+    { "malx": "LX0001", "mabgRef": "BG0001", "tenloaixe": "Xe máy" },
+    { "malx": "LX0002", "mabgRef": "BG0002", "tenloaixe": "Ô tô" },
+    { "malx": "LX0003", "mabgRef": "BG0003", "tenloaixe": "Xe đạp điện" }
   ],
   "xe": [
-    { "bienso": "65A-12345", "makhRef": "KH24000003", "malxRef": "LX01" },
-    { "bienso": "65B-67890", "makhRef": "KH24000004", "malxRef": "LX02" },
-    { "bienso": "65C-11122", "makhRef": "KH24000005", "malxRef": "LX03" }
+    { "bienso": "79A-123.45", "makhRef": "KH24000001", "malxRef": "LX0001" },
+    { "bienso": "59B-678.90", "makhRef": "KH24000002", "malxRef": "LX0002" },
+    { "bienso": "81D-445.56", "makhRef": "KH24000003", "malxRef": "LX0003" }
   ]
 }
