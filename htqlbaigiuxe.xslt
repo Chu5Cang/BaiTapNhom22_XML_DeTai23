@@ -26,9 +26,10 @@
         <!-- 1 -->
         <h2>1. Khách hàng có mã “KH24000003”</h2>
         <table>
-          <tr><th>Họ tên</th><th>Địa chỉ</th><th>Số điện thoại</th></tr>
+          <tr><th>Mã khách hàng</th><th>Họ tên</th><th>Địa chỉ</th><th>Số điện thoại</th></tr>
           <xsl:for-each select="//khachhang[@makh='KH24000003']">
             <tr>
+              <td><xsl:value-of select="@makh"/></td>
               <td><xsl:value-of select="hoten"/></td>
               <td><xsl:value-of select="diachi"/></td>
               <td><xsl:value-of select="sdt"/></td>
@@ -59,9 +60,10 @@
         <!-- 4 -->
         <h2>4. Biển số xe thuộc khách hàng “KH24000003”</h2>
         <table>
-          <tr><th>Họ tên</th><th>Biển số xe</th></tr>
+          <tr><th>Mã khách hàng</th><th>Họ tên</th><th>Biển số xe</th></tr>
           <xsl:for-each select="//xe[@makhRef='KH24000003']">
             <tr>
+              <td><xsl:value-of select="//khachhang[@makh=current()/@makhRef]/@makh"/></td>
               <td><xsl:value-of select="//khachhang[@makh=current()/@makhRef]/hoten"/></td>
               <td><xsl:value-of select="@bienso"/></td>
             </tr>

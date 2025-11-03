@@ -14,9 +14,11 @@
           "sdt": { "type": "string", "pattern": "^0\\d{9}$" },
           "diachi": { "type": "string" }
         },
-        "required": ["makh", "hoten", "gioitinh", "sdt"]
+        "required": ["makh", "hoten", "gioitinh", "sdt"],
+        "additionalProperties": false
       }
     }
   },
-  "required": ["khachhang"]
+  "required": ["khachhang"],
+  "additionalProperties": false
 }
