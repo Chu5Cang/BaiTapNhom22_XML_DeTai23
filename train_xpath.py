@@ -38,3 +38,19 @@ print(tree.xpath("//calam[number(substring(giobatdau,1,2)) > 14]/tencalam/text()
 
 print("Lay thong tin khach hang so 5:")
 print(tree.xpath("//khachhang[5]/hoten/text()"))
+
+
+# Nâng cao
+
+print("Các lượt giữ xe ngày phân công 2024-10-01")
+print(tree.xpath("//luotgiuxe[@mapcRef= //lichphancong[ngayphancong='2024-10-01']/@mapc]/@biensoRef"))
+
+print("Các xe của khách hàng ở TP.HCM")
+print(tree.xpath("//xe[@makhRef=//khachhang[contains(diachi, 'TP.HCM')]/@makh]/@bienso"))
+
+print("Lay thong tin khach hang cua hoa don (HD24000002)")
+for i in tree.xpath("//khachhang[@makh=//xe[@bienso=//luotgiuxe[@maluot=//hoadon[@mahd='HD24000002']/@maluotRef]/@biensoRef]/@makhRef]/hoten/text()"):
+    print(i)
+
+for y in tree.xpath("//hoadon[@maluotRef = //luotgiuxe[@mapcRef = //lichphancong[@manvRef = //nhanvien[@manv = 'NV24000002']/@manv]/@mapc]/@maluot]/@mahd"):
+    print(y)

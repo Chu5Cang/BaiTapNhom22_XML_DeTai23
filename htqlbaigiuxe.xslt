@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
   
@@ -98,7 +97,7 @@
         <h2>7. Mã hóa đơn có tổng tiền lớn hơn 20000</h2>
         <table>
           <tr><th>Mã hóa đơn</th><th>Tổng tiền</th></tr>
-          <xsl:for-each select="//hoadon[tongtien &gt; 20000]">
+          <xsl:for-each select="//hoadon[tongtien > 20000]">
             <tr>
               <td><xsl:value-of select="@mahd"/></td>
               <td><xsl:value-of select="tongtien"/></td>
